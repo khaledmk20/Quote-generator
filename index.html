@@ -14,9 +14,32 @@
       href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
-    <title>Infinity Scroll</title>
+    <title>Quote generator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="quote-container" id="quote-container">
+      <!-- quoter -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"
+          >To bring anything into your life, imagine that it's already there.
+        </span>
+        <!-- author -->
+        <div class="quote-author">
+          <span id="quote-author">Richard Bach</span>
+
+          <!-- buntton container -->
+          <div class="btn-container">
+            <button class="publish-btn">
+              <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button class="quote-generator">New quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader" id="loader"></div>
+  </body>
 </html>
